@@ -6,7 +6,7 @@
         }
     
     body{
-    background-color: lightsteelblue;
+    background-color: rgb(83, 122, 199);
     font-family: 'Commissioner', sans-serif;
 }
 /* how the page wrapper will appear on mobile */
@@ -46,7 +46,7 @@ footer{
 
 /* variable font animation */
 h3{
-    font-weight:20; 
+    font: weight 30px;; 
     text-align: center;
     font-size: 5em;
     animation: weightChange 7s infinite;
