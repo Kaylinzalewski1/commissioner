@@ -1,13 +1,14 @@
 @font-face {
     src: url("Commissioner-VariableFont_FLAR\,VOLM\,slnt\,wght.woff2") format("woff2");
-        font-family: 'Commissioner';
-        font-style: normal;
-        font-weight: normal;
-        }
-    
-    body{
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
     background-color: rgb(83, 122, 199);
     font-family: 'Commissioner', sans-serif;
+    color: white; /* Set text color to white */
 }
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
@@ -41,7 +42,8 @@ grid-area: a;
 }
 /* CSS for the footer */
 footer{
-    background-color: gray;
+    background-color: rgb(231, 231, 246);
+    color: rgb(83, 122, 199); /* Set text color to light blue */
 }
 
 /* variable font animation */
@@ -88,6 +90,7 @@ h3{
 
 .weight{
     animation: weightAnimation 7s infinite;
+    font-size: xx-large; 
 
 }
 
@@ -102,7 +105,7 @@ h3{
 }
 .volume{    
     animation: volumeAnimation 7s infinite;
-
+    font-size: xx-large;
 }
 
 
@@ -118,8 +121,8 @@ h3{
 
 
 .slant{
-animation: slantAnimation 7s infinite;
-
+    animation: slantAnimation 7s infinite;
+    font-size: xx-large;
 }
 
 
@@ -133,7 +136,7 @@ animation: slantAnimation 7s infinite;
 }
 .flare{
     animation: flareAnimation 7s infinite;
-
+    font-size: xx-large;
 }
 
 
@@ -155,5 +158,6 @@ animation: slantAnimation 7s infinite;
     width: 80%;
     height: 80%;
 }
+
 
 
