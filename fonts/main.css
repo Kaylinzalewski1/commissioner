@@ -18,7 +18,7 @@ body {
 /* how the page wrapper appears on desktop */
 
 @media only screen and (min-width:800px){
-.page-wrapper{
+/* .page-wrapper{
 display: grid;
 grid-gap: 25px;
 grid-template-columns: 1fr 1fr;
@@ -26,7 +26,7 @@ grid-template-rows: auto;
 grid-template-areas: 
     "h v"
     "a a";
-}
+} */
 
 .history {
 grid-area: h;
@@ -151,7 +151,7 @@ h3{
     }
     
 }
-
+/* 
 .stars-container{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -160,16 +160,113 @@ h3{
     margin: 0 auto;
     width: 80%;
     height: 80%;
-}
+} */
 
-.Download Button {
-    background-color: #a66413;
+.download-button {
+    background-color: rgb(166, 19, 19);
     color: #fff;
     border: none;
     border-radius: 40px;
     padding: 15px 30px;
+    margin-left: 75%;
     font-weight: bold;
     text-transform: uppercase;
     box-shadow: 25px 8px 9px rgba(68, 16, 16, 0.8);
 }
 
+/* star animation */
+
+.hero-section {
+    position: relative; /* This makes the .moving-star move relative to this container */
+    overflow: hidden; /* Prevents the star from showing outside the container */
+  }
+  
+  /* Keyframes for moving the star */
+  @keyframes moveAcross {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(3000%);
+    }
+  }
+  
+  /* Apply animation to the star */
+  .moving-star {
+    animation: moveAcross 5s linear infinite;
+    position: absolute; /* Ensure it moves relative to the parent container */
+    top: 50%; /* Center vertically within the parent container */
+    left: 0; /* Start from the left edge of the parent container */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    width: 50px; /* Adjust the size of the star */
+    height: auto;
+  }
+  .moving-star-faded {
+    animation: moveAcross 6s linear infinite; /* Slightly slower animation for variation */
+    position: absolute;
+    top: 45%; /* Slightly lower than the first star */
+    left: 0;
+    transform: translateY(-50%);
+    width: 50px; /* Slightly smaller size */
+    height: auto;
+    opacity: 0.6; /* Faded appearance */
+  }
+  .moving-star-faded2 {
+    animation: moveAcross 7s linear infinite; /* Slightly slower animation for variation */
+    position: absolute;
+    top: 30%; /* Slightly lower than the first star */
+    left: 0;
+    transform: translateY(-50%);
+    width: 50px; /* Slightly smaller size */
+    height: auto;
+    opacity: 0.75; /* Faded appearance */
+  }
+  .moving-star-faded3 {
+    animation: moveAcross 9s linear infinite; /* Slightly slower animation for variation */
+    position: absolute;
+    top: 40%; /* Slightly lower than the first star */
+    left: 0;
+    transform: translateY(-50%);
+    width: 50px; /* Slightly smaller size */
+    height: auto;
+  }
+  .moving-star-faded4 {
+    animation: moveAcross 5.5s linear infinite; /* Slightly slower animation for variation */
+    position: absolute;
+    top: 25%; /* Slightly lower than the first star */
+    left: 0;
+    transform: translateY(-50%);
+    width: 50px; /* Slightly smaller size */
+    height: auto;
+    opacity: 0.6; /* Faded appearance */
+  }
+  .moving-star-faded5 {
+    animation: moveAcross 5s linear infinite; /* Slightly slower animation for variation */
+    position: absolute;
+    top: 10%; /* Slightly lower than the first star */
+    left: 0;
+    transform: translateY(-50%);
+    width: 40px; /* Slightly smaller size */
+    height: auto;
+    opacity: 0.8; /* Faded appearance */
+  }
+  .moving-star-faded6 {
+    animation: moveAcross 6.5s linear infinite; /* Slightly slower animation for variation */
+    position: absolute;
+    top: 15%; /* Slightly lower than the first star */
+    left: 0;
+    transform: translateY(-50%);
+    width: 40px; /* Slightly smaller size */
+    height: auto;
+    opacity: 0.8; /* Faded appearance */
+  }
+  .moving-star-faded7 {
+    animation: moveAcross 9.5s linear infinite; /* Slightly slower animation for variation */
+    position: absolute;
+    top: 10%; /* Slightly lower than the first star */
+    left: 0;
+    transform: translateY(-50%);
+    width: 40px; /* Slightly smaller size */
+    height: auto;
+    opacity: 0.3; /* Faded appearance */
+  }
