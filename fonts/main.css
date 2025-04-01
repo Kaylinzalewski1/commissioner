@@ -41,9 +41,12 @@ grid-area: a;
 }
 }
 /* CSS for the footer */
-footer{
+footer {
     background-color: rgb(231, 231, 246);
     color: rgb(83, 122, 199); /* Set text color to light blue */
+    font-size: 1.5em; /* Increase font size */
+    padding: 20px; /* Add padding for a larger appearance */
+    text-align: center; /* Center-align the footer content */
 }
 
 /* variable font animation */
@@ -159,5 +162,14 @@ h3{
     height: 80%;
 }
 
-
+.Download Button {
+    background-color: #a66413;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    padding: 15px 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 25px 8px 9px rgba(68, 16, 16, 0.8);
+}
 
